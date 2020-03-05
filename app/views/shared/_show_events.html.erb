@@ -1,0 +1,23 @@
+<h2><%= title %> <%= pluralize(events, "Event") %></h2>
+    
+    <ol>
+        <% events.each do |event| %>
+            <li>
+                <h3><%= link_to "#{event}", events_path(event) %></h3>  
+                <h4><%= event.type %></h4>
+
+                <p><%= event.description %></p>
+
+                <b>Start at:</b> <%= event.event_start_at %> | <b>End at:</b> <%= event.event_end_at %>
+
+                <% if current_user == event.creator || current_user.admin? %>
+                    <% if current_user == event.creator %>
+                        <%= link_to 'edit', edit_event_path(event) %>
+                    <% end %>
+                    <%= link_to 'delete', event, method: :delete, data: { confirm: "Are you sure?" } %>
+                <% end %>
+            </li>
+
+            <hr />
+        <% end %>
+    </ol>    
