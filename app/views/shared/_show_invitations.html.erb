@@ -1,0 +1,30 @@
+<h1><%= title %> <%= pluralize(invitations, "Invitation") %> (<%= invitations.count %>)</h1>
+
+<ol>
+    <% invitations.each do |invitation| %>
+        <% if title == "Sended" %>
+            <% user = User.find(invitation.invited_id) %>
+        <% else %>
+            <% user = User.find(invitation.inviter_id) %>
+        <% end %>
+        <% event = Events.find(invitation.event_id) %>
+        <%=  %>
+        <% if invitation.rejected? %>
+            <% color = "red" %>
+        <% else %>
+            <% color = "green" %>
+        <% end %>
+        <span style=<%= color %>><li>
+            <p>User name: <%= user.name %> - Email: <%= user.email %></p>
+            <p>Created events: <b>(<%= user.created_events.count %>)</b> - 
+             Attendent events: <b>(<%= user.attendent_events.count %>)</b></p>
+            <p>Sended invitations: <b>(<%= user.invitings.count %>)</b> | 
+                         Accepted: (<%= user.invitings.where(accept: true).count %>) - 
+                         Rejected: (<%= user.invitings.where(accept: false).count %>)</p>
+            <p>Received invitations: <b>(<%= user.inviters.count %>)</b> | 
+                         Accepted: (<%= user.inviters.where(accept: true).count %>) - 
+                         Rejected: (<%= user.inviters.where(accept: false).count %>)</p>
+        </li></span>
+        <hr />
+    <% end %>
+</ol>

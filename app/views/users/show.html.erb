@@ -9,6 +9,24 @@
     <%= render "shared/show_events", events: @user.created_events, title: "Created" %>
 <% end %>  
 
+<hr />
+
 <% if !@user.attendent_events.empty? %>
     <%= render "shared/show_events", events: @user.attendent_events, title: "Attendent" %>
+<% end %>
+
+<hr />
+
+<% if !@user.invitings.empty? %>
+    <%= render "shared/show_invitations", invitations: @user.invitings, title: "Sended" %>
+<% end %>
+
+<hr />
+
+<% if !@user.inviters.where(accept: false).empty? %>
+    <%= render "shared/show_invitations", invitations: @user.inviters.where(accept: false), title: "Received" %>
+<% end %>
+
+<% if !@user.inviters.where(accept: true).empty? %>
+    <%= render "shared/show_invitations", invitations: @user.inviters.where(accept: true), title: "Accepted" %>
 <% end %>
