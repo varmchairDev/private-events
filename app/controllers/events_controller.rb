@@ -49,6 +49,15 @@ class EventsController < ApplicationController
     end
   end
 
+  def attend_event
+  end
+
+  def cancel_event
+  end
+
+  def send_invitation
+  end
+
   private
 
   def set_event

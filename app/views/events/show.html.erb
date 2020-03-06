@@ -1,2 +1,18 @@
-<h1>Events#show</h1>
-<p>Find me in app/views/events/show.html.erb</p>
+<h1><%= @event.name %></h1>
+
+<h3><%= @event.type %> | <%= @event.attendees.count %> <%= pluralize(@event.attendees,"attendee") %></h3>
+<p><%= @event.description %></p>
+
+<% if !@event.attendees.include?(current_user) %>
+    <%= form_for(:attend, :url => { :action => :attend_event }) do |f| %>
+        <%= f.hidden_field :user_id, value: current_user.id %>
+        <%= f.hidden_field :event_id, value: @event.id %>
+        <%= f.submit, value: "Attend" %>
+    <% end %>
+<% else %>
+    <%= form_for(:cancel, :url => { :action => :cancel_event }) do |f| %>
+        <%= f.hidden_field :user_id, value: current_user.id %>
+        <%= f.hidden_field :event_id, value: @event.id %>
+        <%= f.submit, value: "Cancel" %>
+    <% end %>
+<% end %>
