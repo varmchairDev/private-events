@@ -3,16 +3,32 @@
 <h3><%= @event.type %> | <%= @event.attendees.count %> <%= pluralize(@event.attendees,"attendee") %></h3>
 <p><%= @event.description %></p>
 
+<p><b><u>Start at: <%= @event.event_start_at %> - End at: <%= @event.event_end_at %></u></b></p>
+
+<p><i><%= model_date(@event) %></i></p>
+
 <% if !@event.attendees.include?(current_user) %>
     <%= form_for(:attend, :url => { :action => :attend_event }) do |f| %>
-        <%= f.hidden_field :user_id, value: current_user.id %>
-        <%= f.hidden_field :event_id, value: @event.id %>
         <%= f.submit, value: "Attend" %>
     <% end %>
 <% else %>
     <%= form_for(:cancel, :url => { :action => :cancel_event }) do |f| %>
-        <%= f.hidden_field :user_id, value: current_user.id %>
-        <%= f.hidden_field :event_id, value: @event.id %>
         <%= f.submit, value: "Cancel" %>
     <% end %>
+    <%= form_for(:invite, :url => { :action => :send_invitation }) do |f| %>
+        <%= f.label :user_name %>
+        <%= f.text_field :user_name %>
+        <%= f.submit, value: "Invite" %>
+    <% end %>
 <% end %>
+
+<hr />
+
+<h2>Attendees</h2>
+<ol>
+    <% @event.attendees.each do |attendee| %>
+        <li>
+            <%= link_to "#{attendee.name}", users_path(attendee) %>
+        </li>
+    <% end %>
+</ol>

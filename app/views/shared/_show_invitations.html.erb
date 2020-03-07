@@ -8,22 +8,38 @@
             <% user = User.find(invitation.inviter_id) %>
         <% end %>
         <% event = Events.find(invitation.event_id) %>
-        <%=  %>
+        <% color = "black" %>
         <% if invitation.rejected? %>
             <% color = "red" %>
-        <% else %>
+        <% elsif invitation.accepted? %>
             <% color = "green" %>
         <% end %>
         <span style=<%= color %>><li>
-            <p>User name: <%= user.name %> - Email: <%= user.email %></p>
+            <p>User name: <%= user.name %> - Email: <%= user.email %> | <%= Event.find(invitation.event_id).name %></p>
             <p>Created events: <b>(<%= user.created_events.count %>)</b> - 
              Attendent events: <b>(<%= user.attendent_events.count %>)</b></p>
             <p>Sended invitations: <b>(<%= user.invitings.count %>)</b> | 
                          Accepted: (<%= user.invitings.where(accept: true).count %>) - 
                          Rejected: (<%= user.invitings.where(accept: false).count %>)</p>
             <p>Received invitations: <b>(<%= user.inviters.count %>)</b> | 
-                         Accepted: (<%= user.inviters.where(accept: true).count %>) - 
-                         Rejected: (<%= user.inviters.where(accept: false).count %>)</p>
+                           Accepted: (<%= user.inviters.where(accept: true).count %>) - 
+                           Rejected: (<%= user.inviters.where(accept: false).count %>)</p>
+            <% if title == "Received" %>
+                <%= form_for(:invitation_form_accept, :url => { :action => :accept_invitation }) do |f| %>
+                    <%= f.hidden_field :event_id, value: invitation.event_id %>
+                    <%= f.hidden_field :inviter_id, value: invitation.inviter_id %>
+                    <%= f.submit, value: "Accept" %>
+                <% end %>
+                <%= form_for(:invitation_form_reject, :url => { :action => :reject_invitation }) do |f| %>
+                    <%= f.hidden_field :event_id, value: invitation.event_id %>
+                    <%= f.hidden_field :inviter_id, value: invitation.inviter_id %>
+                    <%= f.submit, value: "Reject" %>
+                <% end %>
+            <% end %>
+            <% action_name_i = title == "Sended" ? "sended as" : "received by" %>
+            <% if Event.find(invitation.event_id).creator.id == invitation.inviter_id  %>
+                <em>Invitation <%= action_name_i %> event creator.</em>
+            <% end %>
         </li></span>
         <hr />
     <% end %>
