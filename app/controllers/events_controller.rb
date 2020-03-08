@@ -63,11 +63,13 @@ class EventsController < ApplicationController
   end
 
   def send_invitation
-    redirect_back(fallback_location: root_path) unless current_user.name != params[:invite][:user_name]
+    redirect_back(fallback_location: root_path) if current_user.name == params[:invite][:user_name]
     invited = User.find_by(name: params[:invite][:user_name])
     redirect_back(fallback_location: root_path) unless 
-                         Invitation.find_by(inviter_id: current_user.id, invited_id: invited.id, event_id: @event.id).nil?
-    new_invitation = Invitation.new(inviter_id: current_user.id, invited_id: invited.id, event_id: @event.id)
+                         Invitation.find_by(inviter_id: current_user.id, 
+                                            invited_id: invited.id, event_id: @event.id).nil?
+    new_invitation = Invitation.new(inviter_id: current_user.id, invited_id: invited.id, 
+                                                                    event_id: @event.id)
     if new_invitation.save
       flash[:success] = "Invitations sended."
     else 

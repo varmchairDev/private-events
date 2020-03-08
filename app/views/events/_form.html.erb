@@ -1,0 +1,18 @@
+<%= form_for(@event) do |f| %>
+    <%= f.label :event_name %>
+    <%= f.text_field :name %>
+
+    <%= f.label :event_type %>
+    <%= f.text_field :type %>
+
+    <%= f.label :description %>
+    <%= f.text_area :description %>
+
+    <%= f.label :event_start_date %>
+    <%= f.date_field :event_start_at %>
+
+    <%= f.label :event_end_date %>
+    <%= f.date_field :event_end_at %>
+
+    <%= f.submit :create_event %>
+<% end %>

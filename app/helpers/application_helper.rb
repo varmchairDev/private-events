@@ -1,5 +1,7 @@
 module ApplicationHelper
 
+    include SessionsHelper unless ApplicationHelper.included_modules.include?(SessionsHelper)
+
     def auth_check 
         redirect_to(root_url) unless current_user.admin? || current_user == @event.creator
     end
