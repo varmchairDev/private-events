@@ -5,41 +5,52 @@
 
 <p><i><%= model_date(@user) %></i></p>
 
+
+
 <% if !@user.created_events.empty? %>
     <%= render "shared/show_events", events: @user.created_events.order(created_at: :desc), title: "Created" %>
+<hr />
+
 <% end %>  
 
+
+
+
+<% if !@user.attended_events.empty? %>
+    <%= render "shared/show_events", events: 
+                                         @user.attendent_events.order(created_at: :desc), title: "Attended" %>
 <hr />
 
-<% if !@user.attendent_events.empty? %>
-    <%= render "shared/show_events", events: 
-                                         @user.attendent_events.order(created_at: :desc), title: "Attendent" %>
 <% end %>
 
-<hr />
 
-<% if !@user.inviters.where(accept: false).empty? %>
+
+<% if !Invitation.where(invited_id: @user.id, accepted: false, rejected: false).empty? %>
     <%= render "shared/show_invitations", invitations: 
               @user.inviters.where(accepted: false, rejected: false).order(created_at: :desc), title: "Received" %>
-<% end %>
-
 <hr />
 
-<% if !@user.inviters.where(accept: true).empty? %>
+<% end %>
+
+
+<% if !Invitation.where(invited_id: @user.id, accepted: true).empty? %>
     <%= render "shared/show_invitations", invitations: 
                               @user.inviters.where(accepted: true).order(created_at: :desc), title: "Accepted" %>
+<hr />
+
 <% end %>
 
-<hr />
 
 <% if !@user.inviters.where(reject: true).empty? %>
     <%= render "shared/show_invitations", invitations: 
                               @user.inviters.where(rejected: true).order(created_at: :desc), title: "Rejected" %>
+<hr />
+
 <% end %>
 
-<hr />
 
 <% if !@user.invitings.empty? %>
     <%= render "shared/show_invitations", invitations: 
                                                    @user.invitings.order(created_at: :desc), title: "Sended" %>
 <% end %>
+

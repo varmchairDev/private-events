@@ -2,7 +2,7 @@ class UsersController < ApplicationController
 
   before_action :set_user, only: [:show, :edit, :update, :destroy, 
                                   :accept_invitation, :reject_invitation]
-  before_action :auth_check, except: [:index, :show]
+  before_action :auth_check, except: [:index, :show, :new, :create]
 
   def index
     @users = User.all

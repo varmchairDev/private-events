@@ -5,24 +5,26 @@ class User < ApplicationRecord
     before_create { email.downcase! }
     has_secure_password
 
-    has_many :attended_events, through: :attendances, class: "Attendance",
-                                                foreign_key: "event_id",
-                                                     source: :event,
-                                                  dependent: :destroy
+    has_many :attended_events_table, class_name: "AttendEvent",
+                                    foreign_key: "user_id"
+                                                            
 
 
-    has_many :created_events,  through: :attendances, class: "Attendance",
-                                                foreign_key: "event_id",
-                                                     source: :event, 
-                                                  dependent: :destroy
+    has_many :created_events_table,  class_name: "CreateEvent",
+                                    foreign_key: "user_id",
+                                      dependent: :destroy
 
-    has_many :sended_invitations,   class: "Invitation",
-                              foreign_key: "inviter_id",
-                                dependent: :destroy
+    has_many :attended_events, through: :attended_events_table, source: :event 
 
-    has_many :received_invitations, class: "Invitation",
-                              foreign_key: "invited_id",
-                                dependent: :destroy
+    has_many :created_events,  through: :created_events_table, source: :event
+
+    has_many :sended_invitations,   class_name: "Invitation",
+                                   foreign_key: "inviter_id",
+                                     dependent: :destroy
+
+    has_many :received_invitations, class_name: "Invitation",
+                                   foreign_key: "invited_id",
+                                     dependent: :destroy
 
     has_many :invitings, through: :sended_invitations, source: :invited
 

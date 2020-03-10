@@ -674,3 +674,1554 @@ Migrating to AddStatusToInvitations (20200306130346)
   ↳ bin/rails:9
   [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ bin/rails:9
+Started GET "/" for 127.0.0.1 at 2020-03-09 15:32:35 +0300
+  [1m[35m (143.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/onur/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by HomePageController#home as HTML
+  Rendering home_page/home.html.erb within layouts/application
+  Rendered home_page/home.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 4192ms (Views: 4181.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2020-03-09 15:32:48 +0300
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `admin?' for nil:NilClass):
+  
+app/helpers/application_helper.rb:6:in `auth_check'
+Started GET "/" for 127.0.0.1 at 2020-03-09 15:33:43 +0300
+Processing by HomePageController#home as HTML
+  Rendering home_page/home.html.erb within layouts/application
+  Rendered home_page/home.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 60ms (Views: 58.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-09 15:33:45 +0300
+Processing by HomePageController#home as HTML
+  Rendering home_page/home.html.erb within layouts/application
+  Rendered home_page/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 47ms (Views: 45.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2020-03-09 15:33:47 +0300
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 0.0ms)
+
+
+  
+LoadError (cannot load such file -- bcrypt):
+  
+app/models/user.rb:6:in `<class:User>'
+app/models/user.rb:1:in `<main>'
+app/controllers/users_controller.rb:15:in `new'
+Started GET "/" for 127.0.0.1 at 2020-03-09 15:34:57 +0300
+Processing by HomePageController#home as HTML
+  Rendering home_page/home.html.erb within layouts/application
+  Rendered home_page/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 30ms (Views: 29.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-09 15:34:59 +0300
+Processing by HomePageController#home as HTML
+  Rendering home_page/home.html.erb within layouts/application
+  Rendered home_page/home.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 41ms (Views: 40.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2020-03-09 15:35:00 +0300
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+LoadError (cannot load such file -- bcrypt):
+  
+app/models/user.rb:6:in `<class:User>'
+app/models/user.rb:1:in `<main>'
+app/controllers/users_controller.rb:15:in `new'
+Started GET "/" for 127.0.0.1 at 2020-03-09 15:35:03 +0300
+Processing by HomePageController#home as HTML
+  Rendering home_page/home.html.erb within layouts/application
+  Rendered home_page/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 31ms (Views: 30.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-09 15:35:04 +0300
+Processing by HomePageController#home as HTML
+  Rendering home_page/home.html.erb within layouts/application
+  Rendered home_page/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 33ms (Views: 31.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-09 15:35:22 +0300
+  [1m[35m (4.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/onur/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by HomePageController#home as HTML
+  Rendering home_page/home.html.erb within layouts/application
+  Rendered home_page/home.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 375ms (Views: 366.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2020-03-09 15:35:24 +0300
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 296ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (Unknown key: :class. Valid keys are: :class_name, :anonymous_class, :foreign_key, :validate, :autosave, :table_name, :before_add, :after_add, :before_remove, :after_remove, :extend, :primary_key, :dependent, :as, :through, :source, :source_type, :inverse_of, :counter_cache, :join_table, :foreign_type, :index_errors):
+  
+app/models/user.rb:8:in `<class:User>'
+app/models/user.rb:1:in `<main>'
+app/controllers/users_controller.rb:15:in `new'
+Started GET "/" for 127.0.0.1 at 2020-03-09 15:39:46 +0300
+Processing by HomePageController#home as HTML
+  Rendering home_page/home.html.erb within layouts/application
+  Rendered home_page/home.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 46ms (Views: 44.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-09 15:39:49 +0300
+Processing by HomePageController#home as HTML
+  Rendering home_page/home.html.erb within layouts/application
+  Rendered home_page/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 29ms (Views: 28.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2020-03-09 15:39:50 +0300
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (225.6ms)
+  Rendered users/new.html.erb within layouts/application (281.5ms)
+Completed 200 OK in 800ms (Views: 313.9ms | ActiveRecord: 365.4ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2020-03-09 15:41:21 +0300
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (2.3ms)
+  Rendered users/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 50ms (Views: 48.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/signup" for 127.0.0.1 at 2020-03-09 15:41:46 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/signup"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.4) lib/puma/configuration.rb:227:in `call'
+puma (3.12.4) lib/puma/server.rb:675:in `handle_request'
+puma (3.12.4) lib/puma/server.rb:476:in `process_client'
+puma (3.12.4) lib/puma/server.rb:334:in `block in run'
+puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/signup" for 127.0.0.1 at 2020-03-09 15:42:40 +0300
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (1.8ms)
+  Rendered users/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 60ms (Views: 35.0ms | ActiveRecord: 5.3ms)
+
+
+Started POST "/signup" for 127.0.0.1 at 2020-03-09 15:42:46 +0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vFyec8MuzUrd7IV98TTsLJY1nepOkPuRFUcU8rRgo6IhfK+/bZf6aDNca+PeomCwLCqATP/eUC44tWko9UIwXg==", "user"=>{"name"=>"Mr. Inviter", "email"=>"admin@mail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"submit"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:20
+  [1m[36mUser Exists (21.9ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "Mr. Inviter"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:20
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER($1) LIMIT $2[0m  [["email", "admin@mail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:20
+  [1m[36mUser Create (82.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Mr. Inviter"], ["email", "admin@mail.com"], ["password_digest", "$2a$12$kHMmDE40uQOunyXHbZCmyOq4Purb1Ce2AarDZhguu.qMTdDhQZcsy"], ["created_at", "2020-03-09 12:42:46.759588"], ["updated_at", "2020-03-09 12:42:46.759588"]]
+  ↳ app/controllers/users_controller.rb:20
+  [1m[35m (11.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:20
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 468ms (ActiveRecord: 168.7ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2020-03-09 15:42:46 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:91
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (95.7ms)
+Completed 500 Internal Server Error in 171ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (Could not find the association :attendances in model User):
+     5: 
+     6: <p><i><%= model_date(@user) %></i></p>
+     7: 
+     8: <% if !@user.created_events.empty? %>
+     9:     <%= render "shared/show_events", events: @user.created_events.order(created_at: :desc), title: "Created" %>
+    10: <% end %>  
+    11: 
+  
+app/views/users/show.html.erb:8:in `_app_views_users_show_html_erb__298967048846523082_69816472375360'
+Started GET "/signup" for 127.0.0.1 at 2020-03-09 15:49:12 +0300
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (2.7ms)
+  Rendered users/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 50ms (Views: 48.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-09 15:49:13 +0300
+Processing by HomePageController#home as HTML
+  Rendering home_page/home.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered home_page/home.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 26ms (Views: 24.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users.1" for 127.0.0.1 at 2020-03-09 15:49:15 +0300
+Processing by UsersController#index as 
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 67ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/onur/the-odin-project/private-events/app/views/users/index.html.erb:5: syntax error, unexpected ',', expecting ')'
+...ts: (#{user.attended_events})", 
+...                              ^):
+  
+app/views/users/index.html.erb:5: syntax error, unexpected ',', expecting ')'
+Started GET "/" for 127.0.0.1 at 2020-03-09 15:51:51 +0300
+Processing by HomePageController#home as HTML
+  Rendering home_page/home.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered home_page/home.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 34ms (Views: 32.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2020-03-09 15:51:52 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:91
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (8.4ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (Could not find the association :attendances in model User):
+     5: 
+     6: <p><i><%= model_date(@user) %></i></p>
+     7: 
+     8: <% if !@user.created_events.nil? %>
+     9: 
+    10:     <% if !@user.created_events.empty? %>
+    11:         <%= render "shared/show_events", events: @user.created_events.order(created_at: :desc), title: "Created" %>
+  
+app/views/users/show.html.erb:8:in `_app_views_users_show_html_erb__298967048846523082_69816420319120'
+Started GET "/" for 127.0.0.1 at 2020-03-09 15:52:22 +0300
+Processing by HomePageController#home as HTML
+  Rendering home_page/home.html.erb within layouts/application
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered home_page/home.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 42ms (Views: 39.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2020-03-09 15:53:47 +0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/onur/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:91
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (15.2ms)
+Completed 500 Internal Server Error in 73ms (ActiveRecord: 7.2ms)
+
+
+  
+ActionView::Template::Error (Could not find the association :attendances in model User):
+     5: 
+     6: <p><i><%= model_date(@user) %></i></p>
+     7: 
+     8: <% if @user.created_events %>
+     9: 
+    10:     <% if !@user.created_events.empty? %>
+    11:         <%= render "shared/show_events", events: @user.created_events.order(created_at: :desc), title: "Created" %>
+  
+app/views/users/show.html.erb:8:in `_app_views_users_show_html_erb__4573606913328129724_47313696572620'
+Started GET "/" for 127.0.0.1 at 2020-03-09 15:53:50 +0300
+Processing by HomePageController#home as HTML
+  Rendering home_page/home.html.erb within layouts/application
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered home_page/home.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 349ms (Views: 345.3ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2020-03-09 15:54:42 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:91
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (9.2ms)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionView::Template::Error (Could not find the association :attendances in model User):
+     5: 
+     6: <p><i><%= model_date(@user) %></i></p>
+     7: 
+     8: <% if @user.created_events %>
+     9: 
+    10:     <% if !@user.created_events.empty? %>
+    11:         <%= render "shared/show_events", events: @user.created_events.order(created_at: :desc), title: "Created" %>
+  
+app/views/users/show.html.erb:8:in `_app_views_users_show_html_erb__4573606913328129724_70111852206880'
+Started GET "/users/1" for 127.0.0.1 at 2020-03-09 15:58:33 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:91
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (84.0ms)
+Completed 500 Internal Server Error in 114ms (ActiveRecord: 6.8ms)
+
+
+  
+SyntaxError (/home/onur/the-odin-project/private-events/app/models/event.rb:4: syntax error, unexpected ':', expecting end
+...                   foreign_key: "user_id"
+...                              ^
+/home/onur/the-odin-project/private-events/app/models/event.rb:5: syntax error, unexpected ':', expecting end
+...                        source: :user,
+...                              ^
+/home/onur/the-odin-project/private-events/app/models/event.rb:9: syntax error, unexpected ':', expecting end
+...                   foreign_key: "user_id",
+...                              ^
+/home/onur/the-odin-project/private-events/app/models/event.rb:9: syntax error, unexpected ',', expecting end
+...        foreign_key: "user_id",
+...                              ^
+/home/onur/the-odin-project/private-events/app/models/event.rb:17: syntax error, unexpected ':', expecting end
+...                        length: { maximum: 100 }
+...                              ^):
+  
+app/models/event.rb:4: syntax error, unexpected ':', expecting end
+app/models/event.rb:5: syntax error, unexpected ':', expecting end
+app/models/event.rb:9: syntax error, unexpected ':', expecting end
+app/models/event.rb:9: syntax error, unexpected ',', expecting end
+app/models/event.rb:17: syntax error, unexpected ':', expecting end
+app/views/users/show.html.erb:10:in `_app_views_users_show_html_erb__4573606913328129724_70112154902480'
+Started GET "/users/1" for 127.0.0.1 at 2020-03-09 16:00:04 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:91
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (7.2ms)
+Completed 500 Internal Server Error in 43ms (ActiveRecord: 14.9ms)
+
+
+  
+ActionView::Template::Error (Could not find the association :attendances in model User):
+     5: 
+     6: <p><i><%= model_date(@user) %></i></p>
+     7: 
+     8: <% if !@user.created_events.nil? %>
+     9: 
+    10:     <% if !@user.created_events.empty? %>
+    11:         <%= render "shared/show_events", events: @user.created_events.order(created_at: :desc), title: "Created" %>
+  
+app/views/users/show.html.erb:8:in `_app_views_users_show_html_erb__4573606913328129724_70112157076380'
+Started GET "/users/1" for 127.0.0.1 at 2020-03-09 16:00:47 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:91
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (8.3ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (Could not find the association :attendances in model User):
+     5: 
+     6: <p><i><%= model_date(@user) %></i></p>
+     7: 
+     8: <% if !!@user.created_events.nil? %>
+     9: 
+    10:     <% if !@user.created_events.empty? %>
+    11:         <%= render "shared/show_events", events: @user.created_events.order(created_at: :desc), title: "Created" %>
+  
+app/views/users/show.html.erb:8:in `_app_views_users_show_html_erb__4573606913328129724_70111858759740'
+Started GET "/users/1" for 127.0.0.1 at 2020-03-09 16:03:05 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:91
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (15.2ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (Could not find the association :attendances in model User):
+     5: 
+     6: <p><i><%= model_date(@user) %></i></p>
+     7: 
+     8: <% if @user.created_events.any? %>
+     9: 
+    10:     <% if !@user.created_events.empty? %>
+    11:         <%= render "shared/show_events", events: @user.created_events.order(created_at: :desc), title: "Created" %>
+  
+app/views/users/show.html.erb:8:in `_app_views_users_show_html_erb__4573606913328129724_70112157147960'
+Started GET "/users/1" for 127.0.0.1 at 2020-03-09 16:07:23 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:91
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (10.1ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (Could not find the association :attendances in model User):
+     5: 
+     6: <p><i><%= model_date(@user) %></i></p>
+     7: 
+     8: <% if @user.created_events.exist? %>
+     9: 
+    10:     <% if !@user.created_events.empty? %>
+    11:         <%= render "shared/show_events", events: @user.created_events.order(created_at: :desc), title: "Created" %>
+  
+app/views/users/show.html.erb:8:in `_app_views_users_show_html_erb__4573606913328129724_70111859097860'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5168794849566389475)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateCreateEvents (20200309134326)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (1269.7ms)[0m  [1m[35mCREATE TABLE "create_events" ("id" bigserial primary key, "user_id" bigint, "event_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_c66c709e3d"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+, CONSTRAINT "fk_rails_c478a967f8"
+FOREIGN KEY ("event_id")
+  REFERENCES "events" ("id")
+)[0m
+  ↳ db/migrate/20200309134326_create_create_events.rb:3
+  [1m[35m (33.0ms)[0m  [1m[35mCREATE  INDEX  "index_create_events_on_user_id" ON "create_events"  ("user_id")[0m
+  ↳ db/migrate/20200309134326_create_create_events.rb:3
+  [1m[35m (10.5ms)[0m  [1m[35mCREATE  INDEX  "index_create_events_on_event_id" ON "create_events"  ("event_id")[0m
+  ↳ db/migrate/20200309134326_create_create_events.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200309134326"]]
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateAttendEvents (20200309134532)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (48.9ms)[0m  [1m[35mCREATE TABLE "attend_events" ("id" bigserial primary key, "user_id" bigint, "event_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_c765d9f8ea"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+, CONSTRAINT "fk_rails_7c355ec917"
+FOREIGN KEY ("event_id")
+  REFERENCES "events" ("id")
+)[0m
+  ↳ db/migrate/20200309134532_create_attend_events.rb:3
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE  INDEX  "index_attend_events_on_user_id" ON "attend_events"  ("user_id")[0m
+  ↳ db/migrate/20200309134532_create_attend_events.rb:3
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE  INDEX  "index_attend_events_on_event_id" ON "attend_events"  ("event_id")[0m
+  ↳ db/migrate/20200309134532_create_attend_events.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200309134532"]]
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (53.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(5168794849566389475)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (41.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (2.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEvent Exists (12.3ms)[0m  [1m[34mSELECT  1 AS one FROM "events" WHERE LOWER("events"."name") = LOWER($1) LIMIT $2[0m  [["name", "first event"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mCreateEvent Load (49.8ms)[0m  [1m[34mSELECT  "create_events".* FROM "create_events" WHERE "create_events"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 11]]
+  [1m[36mCreateEvent Load (0.6ms)[0m  [1m[34mSELECT  "create_events".* FROM "create_events" WHERE "create_events"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 11]]
+  [1m[36mCreateEvent Load (0.4ms)[0m  [1m[34mSELECT  "create_events".* FROM "create_events" WHERE "create_events"."user_id" = $1 AND "create_events"."id" = $2 LIMIT $3[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEvent Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "events" WHERE LOWER("events"."name") = LOWER($1) LIMIT $2[0m  [["name", "first event"], ["LIMIT", 1]]
+  [1m[36mEvent Create (71.8ms)[0m  [1m[32mINSERT INTO "events" ("name", "description", "event_type", "event_start_at", "event_end_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "first event"], ["description", "our very first precious event."], ["event_type", "first"], ["event_start_at", "2020-04-10"], ["event_end_at", "2020-04-21"], ["created_at", "2020-03-10 13:19:22.236847"], ["updated_at", "2020-03-10 13:19:22.236847"]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCreateEvent Create (57.4ms)[0m  [1m[32mINSERT INTO "create_events" ("user_id", "event_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 1], ["event_id", 1], ["created_at", "2020-03-10 13:19:22.362084"], ["updated_at", "2020-03-10 13:19:22.362084"]]
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mEvent Load (20.3ms)[0m  [1m[34mSELECT  "events".* FROM "events" INNER JOIN "create_events" ON "events"."id" = "create_events"."event_id" WHERE "create_events"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 11]]
+  [1m[36mEvent Load (0.8ms)[0m  [1m[34mSELECT  "events".* FROM "events" INNER JOIN "create_events" ON "events"."id" = "create_events"."event_id" WHERE "create_events"."user_id" = $1 ORDER BY "events"."id" ASC LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" INNER JOIN "create_events" ON "users"."id" = "create_events"."user_id" WHERE "create_events"."event_id" = $1 LIMIT $2[0m  [["event_id", 1], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Update (0.7ms)[0m  [1m[33mUPDATE "users" SET "admin" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["admin", true], ["updated_at", "2020-03-10 13:20:27.199167"], ["id", 1]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (1.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["name", "Mr. Inviter"], ["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER($1) AND "users"."id" != $2 LIMIT $3[0m  [["email", "admin@mail.com"], ["id", 1], ["LIMIT", 1]]
+  [1m[35m (1.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["name", "Mr. Inviter"], ["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER($1) AND "users"."id" != $2 LIMIT $3[0m  [["email", "admin@mail.com"], ["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["name", "Mr. Inviter"], ["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER($1) AND "users"."id" != $2 LIMIT $3[0m  [["email", "admin@mail.com"], ["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Started GET "/" for 127.0.0.1 at 2020-03-10 16:24:00 +0300
+  [1m[35m (54.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/onur/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by HomePageController#home as HTML
+  Rendering home_page/home.html.erb within layouts/application
+  Rendered home_page/home.html.erb within layouts/application (19.2ms)
+Completed 200 OK in 1074ms (Views: 1049.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2020-03-10 16:24:06 +0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (149.6ms)
+Completed 200 OK in 215ms (Views: 195.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2020-03-10 16:24:46 +0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 43ms (Views: 41.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2020-03-10 16:24:53 +0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/onur/the-odin-project/private-events/app/views/sessions/new.html.erb:14: syntax error, unexpected in, expecting ')'
+...uffer.append=( f.submit :log in );@output_buffer.safe_append...
+...                             ^~
+/home/onur/the-odin-project/private-events/app/views/sessions/new.html.erb:16: syntax error, unexpected end, expecting ')'
+'.freeze; end 
+          ^~~
+/home/onur/the-odin-project/private-events/app/views/sessions/new.html.erb:18: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/onur/the-odin-project/private-events/app/views/sessions/new.html.erb:20: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  
+app/views/sessions/new.html.erb:14: syntax error, unexpected in, expecting ')'
+app/views/sessions/new.html.erb:16: syntax error, unexpected end, expecting ')'
+app/views/sessions/new.html.erb:18: syntax error, unexpected ensure, expecting ')'
+app/views/sessions/new.html.erb:20: syntax error, unexpected end, expecting ')'
+Started GET "/login" for 127.0.0.1 at 2020-03-10 16:25:01 +0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 47ms (Views: 45.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2020-03-10 16:25:11 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/login"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.4) lib/puma/configuration.rb:227:in `call'
+puma (3.12.4) lib/puma/server.rb:675:in `handle_request'
+puma (3.12.4) lib/puma/server.rb:476:in `process_client'
+puma (3.12.4) lib/puma/server.rb:334:in `block in run'
+puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/login" for 127.0.0.1 at 2020-03-10 16:26:02 +0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 38ms (Views: 36.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2020-03-10 16:26:24 +0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OsfolMksWSAyPUilf5pxtmbC6zRxrYwQw5j1iPafGqpF6xrhSYv5uWDpGdE7xj4jy1D/0d+6A2+AXohNHOYOUQ==", "sessions"=>{"email"=>"admin@mail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"log_in"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "admin@mail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:60
+  [1m[36mUser Update (0.5ms)[0m  [1m[33mUPDATE "users" SET "remember_digest" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["remember_digest", "$2a$12$reczff6MQwwEMQJkJjFdtuIO4gyGFE5qnvl9u91YhN3XZ/QOAoju."], ["updated_at", "2020-03-10 13:26:25.031349"], ["id", 1]]
+  ↳ app/models/user.rb:60
+  [1m[35m (31.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:60
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 550ms (ActiveRecord: 39.7ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2020-03-10 16:26:25 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:91
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mEvent Exists (1.3ms)[0m  [1m[34mSELECT  1 AS one FROM "events" INNER JOIN "create_events" ON "events"."id" = "create_events"."event_id" WHERE "create_events"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:10
+  [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "create_events" ON "events"."id" = "create_events"."event_id" WHERE "create_events"."user_id" = $1 ORDER BY "events"."created_at" DESC[0m  [["user_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:1
+  [1m[35m (42.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "events" INNER JOIN "create_events" ON "events"."id" = "create_events"."event_id" WHERE "create_events"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:1
+  Rendered shared/_show_events.html.erb (88.8ms)
+  Rendered users/show.html.erb within layouts/application (137.0ms)
+Completed 500 Internal Server Error in 181ms (ActiveRecord: 49.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `type' for #<Event:0x00007f5294009720>):
+    4:         <% events.each do |event| %>
+    5:             <li>
+    6:                 <h3><%= link_to "#{event}", event_path(event) %></h3>  
+    7:                 <h4><%= event.type %> | (<%= event.attendees.count %> <%= pluralize(event.attendees.count, "attendee") %>)</h4>
+    8: 
+    9:                 <p><%= event.description %></p>
+   10: 
+  
+app/views/shared/_show_events.html.erb:7:in `block in _app_views_shared__show_events_html_erb___4142782483721218996_69996305140920'
+app/views/shared/_show_events.html.erb:4:in `_app_views_shared__show_events_html_erb___4142782483721218996_69996305140920'
+app/views/users/show.html.erb:11:in `_app_views_users_show_html_erb__927215126120703917_69996302456120'
+Started GET "/login" for 127.0.0.1 at 2020-03-10 16:28:08 +0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 34ms (Views: 32.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2020-03-10 16:28:13 +0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UGijfnKUegpf1ejFgD3W4lUAwtD8AJkc9lSNwzYMSOEvRFEL8jPakw0BubHEYZl3+JLWNVIXFmO1kvAG3HVcGg==", "sessions"=>{"email"=>"admin@mail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"log_in"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "admin@mail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 279ms (Views: 24.4ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2020-03-10 16:28:22 +0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wyWXNzG2m80t7LXiG/NM3VEhjm6XAZYBaH7mcSDsb1+8CWVCsRE7VH845JZfrwNI/LOaizkWGX4ruJu0ypV7pA==", "sessions"=>{"email"=>"admin@mail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"log_in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "admin@mail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 259ms (Views: 30.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-10 16:28:27 +0300
+Processing by HomePageController#home as HTML
+  Rendering home_page/home.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered home_page/home.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 35ms (Views: 32.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2020-03-10 16:28:32 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (5.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:91
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mEvent Exists (1.1ms)[0m  [1m[34mSELECT  1 AS one FROM "events" INNER JOIN "create_events" ON "events"."id" = "create_events"."event_id" WHERE "create_events"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:10
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "create_events" ON "events"."id" = "create_events"."event_id" WHERE "create_events"."user_id" = $1 ORDER BY "events"."created_at" DESC[0m  [["user_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:1
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "events" INNER JOIN "create_events" ON "events"."id" = "create_events"."event_id" WHERE "create_events"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:1
+  [1m[35m (227.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "attend_events" ON "users"."id" = "attend_events"."user_id" WHERE "attend_events"."event_id" = $1[0m  [["event_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:7
+  [1m[35mCACHE  (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "attend_events" ON "users"."id" = "attend_events"."user_id" WHERE "attend_events"."event_id" = $1[0m  [["event_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:7
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" INNER JOIN "create_events" ON "users"."id" = "create_events"."user_id" WHERE "create_events"."event_id" = $1 LIMIT $2[0m  [["event_id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_show_events.html.erb:13
+  Rendered shared/_show_events.html.erb (274.2ms)
+  Rendered users/show.html.erb within layouts/application (369.1ms)
+Completed 500 Internal Server Error in 382ms (ActiveRecord: 238.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `attendent_events' for #<User:0x00007f52882cef70>
+Did you mean?  attended_events
+               attended_events=):
+    15: 
+    16: <% end %>
+    17: 
+    18: <% if !@user.attendent_events.nil? %>
+    19: 
+    20: <% if !@user.attendent_events.empty? %>
+    21:     <%= render "shared/show_events", events: 
+  
+app/views/users/show.html.erb:18:in `_app_views_users_show_html_erb__927215126120703917_69996224343720'
+Started GET "/" for 127.0.0.1 at 2020-03-10 16:29:48 +0300
+Processing by HomePageController#home as HTML
+  Rendering home_page/home.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered home_page/home.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 43ms (Views: 41.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-10 16:29:49 +0300
+Processing by HomePageController#home as HTML
+  Rendering home_page/home.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered home_page/home.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 33ms (Views: 31.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2020-03-10 16:29:50 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:91
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mEvent Exists (1.2ms)[0m  [1m[34mSELECT  1 AS one FROM "events" INNER JOIN "create_events" ON "events"."id" = "create_events"."event_id" WHERE "create_events"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:10
+  [1m[36mEvent Load (1.8ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "create_events" ON "events"."id" = "create_events"."event_id" WHERE "create_events"."user_id" = $1 ORDER BY "events"."created_at" DESC[0m  [["user_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:1
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "events" INNER JOIN "create_events" ON "events"."id" = "create_events"."event_id" WHERE "create_events"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:1
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "attend_events" ON "users"."id" = "attend_events"."user_id" WHERE "attend_events"."event_id" = $1[0m  [["event_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "attend_events" ON "users"."id" = "attend_events"."user_id" WHERE "attend_events"."event_id" = $1[0m  [["event_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:7
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" INNER JOIN "create_events" ON "users"."id" = "create_events"."user_id" WHERE "create_events"."event_id" = $1 LIMIT $2[0m  [["event_id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_show_events.html.erb:13
+  Rendered shared/_show_events.html.erb (18.6ms)
+  Rendered users/show.html.erb within layouts/application (96.4ms)
+Completed 500 Internal Server Error in 104ms (ActiveRecord: 6.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `attendent_events' for #<User:0x00007f5288269f30>
+Did you mean?  attended_events
+               attended_events=):
+    16: 
+    17: 
+    18: 
+    19: <% if !@user.attendent_events.empty? %>
+    20:     <%= render "shared/show_events", events: 
+    21:                                          @user.attendent_events.order(created_at: :desc), title: "Attendent" %>
+    22: <hr />
+  
+app/views/users/show.html.erb:19:in `_app_views_users_show_html_erb__927215126120703917_69996224136840'
+Started GET "/users/1" for 127.0.0.1 at 2020-03-10 16:30:44 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:91
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mEvent Load (0.7ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "create_events" ON "events"."id" = "create_events"."event_id" WHERE "create_events"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:10
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "create_events" ON "events"."id" = "create_events"."event_id" WHERE "create_events"."user_id" = $1 ORDER BY "events"."created_at" DESC[0m  [["user_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:1
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "events" INNER JOIN "create_events" ON "events"."id" = "create_events"."event_id" WHERE "create_events"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:1
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "attend_events" ON "users"."id" = "attend_events"."user_id" WHERE "attend_events"."event_id" = $1[0m  [["event_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "attend_events" ON "users"."id" = "attend_events"."user_id" WHERE "attend_events"."event_id" = $1[0m  [["event_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:7
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" INNER JOIN "create_events" ON "users"."id" = "create_events"."user_id" WHERE "create_events"."event_id" = $1 LIMIT $2[0m  [["event_id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_show_events.html.erb:13
+  Rendered shared/_show_events.html.erb (10.5ms)
+  Rendered users/show.html.erb within layouts/application (76.4ms)
+Completed 500 Internal Server Error in 83ms (ActiveRecord: 3.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `attendent_events' for #<User:0x00007f528000a238>
+Did you mean?  attended_events
+               attended_events=):
+    16: 
+    17: 
+    18: 
+    19: <% if !@user.attendent_events.empty? %>
+    20:     <%= render "shared/show_events", events: 
+    21:                                          @user.attendent_events.order(created_at: :desc), title: "Attendent" %>
+    22: <hr />
+  
+app/views/users/show.html.erb:19:in `_app_views_users_show_html_erb__927215126120703917_69996155782700'
+Started GET "/users/1" for 127.0.0.1 at 2020-03-10 16:30:47 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:91
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "create_events" ON "events"."id" = "create_events"."event_id" WHERE "create_events"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:10
+  [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "create_events" ON "events"."id" = "create_events"."event_id" WHERE "create_events"."user_id" = $1 ORDER BY "events"."created_at" DESC[0m  [["user_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:1
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "events" INNER JOIN "create_events" ON "events"."id" = "create_events"."event_id" WHERE "create_events"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:1
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "attend_events" ON "users"."id" = "attend_events"."user_id" WHERE "attend_events"."event_id" = $1[0m  [["event_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "attend_events" ON "users"."id" = "attend_events"."user_id" WHERE "attend_events"."event_id" = $1[0m  [["event_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:7
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" INNER JOIN "create_events" ON "users"."id" = "create_events"."user_id" WHERE "create_events"."event_id" = $1 LIMIT $2[0m  [["event_id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_show_events.html.erb:13
+  Rendered shared/_show_events.html.erb (11.9ms)
+  Rendered users/show.html.erb within layouts/application (78.4ms)
+Completed 500 Internal Server Error in 84ms (ActiveRecord: 3.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `attendent_events' for #<User:0x00007f52806a8ab8>
+Did you mean?  attended_events
+               attended_events=):
+    16: 
+    17: 
+    18: 
+    19: <% if !@user.attendent_events.empty? %>
+    20:     <%= render "shared/show_events", events: 
+    21:                                          @user.attendent_events.order(created_at: :desc), title: "Attendent" %>
+    22: <hr />
+  
+app/views/users/show.html.erb:19:in `_app_views_users_show_html_erb__927215126120703917_69996159278140'
+Started GET "/users/1" for 127.0.0.1 at 2020-03-10 16:30:50 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:91
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mEvent Load (1.1ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "create_events" ON "events"."id" = "create_events"."event_id" WHERE "create_events"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:10
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "create_events" ON "events"."id" = "create_events"."event_id" WHERE "create_events"."user_id" = $1 ORDER BY "events"."created_at" DESC[0m  [["user_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:1
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "events" INNER JOIN "create_events" ON "events"."id" = "create_events"."event_id" WHERE "create_events"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:1
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "attend_events" ON "users"."id" = "attend_events"."user_id" WHERE "attend_events"."event_id" = $1[0m  [["event_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "attend_events" ON "users"."id" = "attend_events"."user_id" WHERE "attend_events"."event_id" = $1[0m  [["event_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:7
+  [1m[36mUser Load (3.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" INNER JOIN "create_events" ON "users"."id" = "create_events"."user_id" WHERE "create_events"."event_id" = $1 LIMIT $2[0m  [["event_id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_show_events.html.erb:13
+  Rendered shared/_show_events.html.erb (14.4ms)
+  Rendered users/show.html.erb within layouts/application (99.3ms)
+Completed 500 Internal Server Error in 106ms (ActiveRecord: 7.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `attendent_events' for #<User:0x00007f5291b69a00>
+Did you mean?  attended_events
+               attended_events=):
+    16: 
+    17: 
+    18: 
+    19: <% if !@user.attendent_events.empty? %>
+    20:     <%= render "shared/show_events", events: 
+    21:                                          @user.attendent_events.order(created_at: :desc), title: "Attendent" %>
+    22: <hr />
+  
+app/views/users/show.html.erb:19:in `_app_views_users_show_html_erb__927215126120703917_69996304351880'
+Started GET "/" for 127.0.0.1 at 2020-03-10 16:33:23 +0300
+Processing by HomePageController#home as HTML
+  Rendering home_page/home.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered home_page/home.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 29ms (Views: 27.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-10 16:33:26 +0300
+Processing by HomePageController#home as HTML
+  Rendering home_page/home.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered home_page/home.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 45ms (Views: 42.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2020-03-10 16:33:26 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:91
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mEvent Exists (1.2ms)[0m  [1m[34mSELECT  1 AS one FROM "events" INNER JOIN "create_events" ON "events"."id" = "create_events"."event_id" WHERE "create_events"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:10
+  [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "create_events" ON "events"."id" = "create_events"."event_id" WHERE "create_events"."user_id" = $1 ORDER BY "events"."created_at" DESC[0m  [["user_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:1
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "events" INNER JOIN "create_events" ON "events"."id" = "create_events"."event_id" WHERE "create_events"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:1
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "attend_events" ON "users"."id" = "attend_events"."user_id" WHERE "attend_events"."event_id" = $1[0m  [["event_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "attend_events" ON "users"."id" = "attend_events"."user_id" WHERE "attend_events"."event_id" = $1[0m  [["event_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:7
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" INNER JOIN "create_events" ON "users"."id" = "create_events"."user_id" WHERE "create_events"."event_id" = $1 LIMIT $2[0m  [["event_id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_show_events.html.erb:13
+  Rendered shared/_show_events.html.erb (15.7ms)
+  [1m[36mEvent Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "events" INNER JOIN "attend_events" ON "events"."id" = "attend_events"."event_id" WHERE "attend_events"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:19
+  Rendered users/show.html.erb within layouts/application (185.4ms)
+Completed 500 Internal Server Error in 191ms (ActiveRecord: 25.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `belong_to' for #<Class:0x00007f52917e2238>
+Did you mean?  belongs_to):
+    25: 
+    26: 
+    27: 
+    28: <% if !@user.inviters.where(accept: false).empty? %>
+    29:     <%= render "shared/show_invitations", invitations: 
+    30:               @user.inviters.where(accepted: false, rejected: false).order(created_at: :desc), title: "Received" %>
+    31: <hr />
+  
+app/models/invitation.rb:3:in `<class:Invitation>'
+app/models/invitation.rb:1:in `<main>'
+app/views/users/show.html.erb:28:in `_app_views_users_show_html_erb__927215126120703917_69996301054580'
+Started GET "/" for 127.0.0.1 at 2020-03-10 16:33:37 +0300
+Processing by HomePageController#home as HTML
+  Rendering home_page/home.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered home_page/home.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 59ms (Views: 56.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-10 16:33:38 +0300
+Processing by HomePageController#home as HTML
+  Rendering home_page/home.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered home_page/home.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 39ms (Views: 36.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-10 16:33:55 +0300
+Processing by HomePageController#home as HTML
+  Rendering home_page/home.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered home_page/home.html.erb within layouts/application (27.1ms)
+Completed 200 OK in 52ms (Views: 46.4ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2020-03-10 16:33:56 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:91
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mEvent Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM "events" INNER JOIN "create_events" ON "events"."id" = "create_events"."event_id" WHERE "create_events"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:10
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "create_events" ON "events"."id" = "create_events"."event_id" WHERE "create_events"."user_id" = $1 ORDER BY "events"."created_at" DESC[0m  [["user_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:1
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "events" INNER JOIN "create_events" ON "events"."id" = "create_events"."event_id" WHERE "create_events"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:1
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "attend_events" ON "users"."id" = "attend_events"."user_id" WHERE "attend_events"."event_id" = $1[0m  [["event_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "attend_events" ON "users"."id" = "attend_events"."user_id" WHERE "attend_events"."event_id" = $1[0m  [["event_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:7
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" INNER JOIN "create_events" ON "users"."id" = "create_events"."user_id" WHERE "create_events"."event_id" = $1 LIMIT $2[0m  [["event_id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_show_events.html.erb:13
+  Rendered shared/_show_events.html.erb (33.9ms)
+  [1m[36mEvent Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "events" INNER JOIN "attend_events" ON "events"."id" = "attend_events"."event_id" WHERE "attend_events"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:19
+  Rendered users/show.html.erb within layouts/application (79.3ms)
+Completed 500 Internal Server Error in 86ms (ActiveRecord: 12.5ms)
+
+
+  
+ActionView::Template::Error (Could not find the source association(s) "inviter" or :inviters in model Invitation. Try 'has_many :inviters, :through => :received_invitations, :source => <name>'. Is it one of event or user?):
+    25: 
+    26: 
+    27: 
+    28: <% if !@user.inviters.where(accept: false).empty? %>
+    29:     <%= render "shared/show_invitations", invitations: 
+    30:               @user.inviters.where(accepted: false, rejected: false).order(created_at: :desc), title: "Received" %>
+    31: <hr />
+  
+app/views/users/show.html.erb:28:in `_app_views_users_show_html_erb__927215126120703917_69996159258740'
+Started GET "/users/1" for 127.0.0.1 at 2020-03-10 16:35:02 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:91
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mEvent Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "events" INNER JOIN "create_events" ON "events"."id" = "create_events"."event_id" WHERE "create_events"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:10
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "create_events" ON "events"."id" = "create_events"."event_id" WHERE "create_events"."user_id" = $1 ORDER BY "events"."created_at" DESC[0m  [["user_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:1
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "events" INNER JOIN "create_events" ON "events"."id" = "create_events"."event_id" WHERE "create_events"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:1
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "attend_events" ON "users"."id" = "attend_events"."user_id" WHERE "attend_events"."event_id" = $1[0m  [["event_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "attend_events" ON "users"."id" = "attend_events"."user_id" WHERE "attend_events"."event_id" = $1[0m  [["event_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:7
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" INNER JOIN "create_events" ON "users"."id" = "create_events"."user_id" WHERE "create_events"."event_id" = $1 LIMIT $2[0m  [["event_id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_show_events.html.erb:13
+  Rendered shared/_show_events.html.erb (26.2ms)
+  [1m[36mEvent Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "events" INNER JOIN "attend_events" ON "events"."id" = "attend_events"."event_id" WHERE "attend_events"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:19
+  Rendered users/show.html.erb within layouts/application (60.6ms)
+Completed 500 Internal Server Error in 85ms (ActiveRecord: 8.3ms)
+
+
+  
+ActionView::Template::Error (Could not find the source association(s) :inviter in model Invitation. Try 'has_many :inviters, :through => :received_invitations, :source => <name>'. Is it one of event or user?):
+    25: 
+    26: 
+    27: 
+    28: <% if !@user.inviters.where(accept: false).empty? %>
+    29:     <%= render "shared/show_invitations", invitations: 
+    30:               @user.inviters.where(accepted: false, rejected: false).order(created_at: :desc), title: "Received" %>
+    31: <hr />
+  
+app/views/users/show.html.erb:28:in `_app_views_users_show_html_erb__927215126120703917_69996324150000'
+Started GET "/" for 127.0.0.1 at 2020-03-10 16:35:05 +0300
+Processing by HomePageController#home as HTML
+  Rendering home_page/home.html.erb within layouts/application
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered home_page/home.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 47ms (Views: 43.1ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2020-03-10 16:35:06 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:91
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mEvent Exists (1.1ms)[0m  [1m[34mSELECT  1 AS one FROM "events" INNER JOIN "create_events" ON "events"."id" = "create_events"."event_id" WHERE "create_events"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:10
+  [1m[36mEvent Load (0.8ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "create_events" ON "events"."id" = "create_events"."event_id" WHERE "create_events"."user_id" = $1 ORDER BY "events"."created_at" DESC[0m  [["user_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:1
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "events" INNER JOIN "create_events" ON "events"."id" = "create_events"."event_id" WHERE "create_events"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:1
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "attend_events" ON "users"."id" = "attend_events"."user_id" WHERE "attend_events"."event_id" = $1[0m  [["event_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "attend_events" ON "users"."id" = "attend_events"."user_id" WHERE "attend_events"."event_id" = $1[0m  [["event_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:7
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" INNER JOIN "create_events" ON "users"."id" = "create_events"."user_id" WHERE "create_events"."event_id" = $1 LIMIT $2[0m  [["event_id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_show_events.html.erb:13
+  Rendered shared/_show_events.html.erb (13.2ms)
+  [1m[36mEvent Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "events" INNER JOIN "attend_events" ON "events"."id" = "attend_events"."event_id" WHERE "attend_events"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:19
+  Rendered users/show.html.erb within layouts/application (33.6ms)
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 5.6ms)
+
+
+  
+ActionView::Template::Error (Could not find the source association(s) :inviter in model Invitation. Try 'has_many :inviters, :through => :received_invitations, :source => <name>'. Is it one of event or user?):
+    25: 
+    26: 
+    27: 
+    28: <% if !@user.inviters.where(accept: false).empty? %>
+    29:     <%= render "shared/show_invitations", invitations: 
+    30:               @user.inviters.where(accepted: false, rejected: false).order(created_at: :desc), title: "Received" %>
+    31: <hr />
+  
+app/views/users/show.html.erb:28:in `_app_views_users_show_html_erb__927215126120703917_69996223639260'
+Started GET "/" for 127.0.0.1 at 2020-03-10 16:37:37 +0300
+Processing by HomePageController#home as HTML
+  Rendering home_page/home.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered home_page/home.html.erb within layouts/application (23.1ms)
+Completed 200 OK in 58ms (Views: 55.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-10 16:37:39 +0300
+Processing by HomePageController#home as HTML
+  Rendering home_page/home.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered home_page/home.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 41ms (Views: 39.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2020-03-10 16:37:40 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:91
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mEvent Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "events" INNER JOIN "create_events" ON "events"."id" = "create_events"."event_id" WHERE "create_events"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:10
+  [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "create_events" ON "events"."id" = "create_events"."event_id" WHERE "create_events"."user_id" = $1 ORDER BY "events"."created_at" DESC[0m  [["user_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:1
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "events" INNER JOIN "create_events" ON "events"."id" = "create_events"."event_id" WHERE "create_events"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:1
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "attend_events" ON "users"."id" = "attend_events"."user_id" WHERE "attend_events"."event_id" = $1[0m  [["event_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "attend_events" ON "users"."id" = "attend_events"."user_id" WHERE "attend_events"."event_id" = $1[0m  [["event_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:7
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" INNER JOIN "create_events" ON "users"."id" = "create_events"."user_id" WHERE "create_events"."event_id" = $1 LIMIT $2[0m  [["event_id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_show_events.html.erb:13
+  Rendered shared/_show_events.html.erb (29.5ms)
+  [1m[36mEvent Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "events" INNER JOIN "attend_events" ON "events"."id" = "attend_events"."event_id" WHERE "attend_events"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:19
+  Rendered users/show.html.erb within layouts/application (66.0ms)
+Completed 500 Internal Server Error in 77ms (ActiveRecord: 4.8ms)
+
+
+  
+ActionView::Template::Error (Could not find the source association(s) :inviter in model Invitation. Try 'has_many :inviters, :through => :received_invitations, :source => <name>'. Is it one of event or user?):
+    25: 
+    26: 
+    27: 
+    28: <% if !@user.inviters.where(accept: false).empty? %>
+    29:     <%= render "shared/show_invitations", invitations: 
+    30:               @user.inviters.where(accepted: false, rejected: false).order(created_at: :desc), title: "Received" %>
+    31: <hr />
+  
+app/views/users/show.html.erb:28:in `_app_views_users_show_html_erb__927215126120703917_69996025347620'
+Started GET "/users/1" for 127.0.0.1 at 2020-03-10 16:38:11 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:91
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mEvent Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "events" INNER JOIN "create_events" ON "events"."id" = "create_events"."event_id" WHERE "create_events"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:10
+  [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "create_events" ON "events"."id" = "create_events"."event_id" WHERE "create_events"."user_id" = $1 ORDER BY "events"."created_at" DESC[0m  [["user_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:1
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "events" INNER JOIN "create_events" ON "events"."id" = "create_events"."event_id" WHERE "create_events"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:1
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "attend_events" ON "users"."id" = "attend_events"."user_id" WHERE "attend_events"."event_id" = $1[0m  [["event_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "attend_events" ON "users"."id" = "attend_events"."user_id" WHERE "attend_events"."event_id" = $1[0m  [["event_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:7
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" INNER JOIN "create_events" ON "users"."id" = "create_events"."user_id" WHERE "create_events"."event_id" = $1 LIMIT $2[0m  [["event_id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_show_events.html.erb:13
+  Rendered shared/_show_events.html.erb (29.9ms)
+  [1m[36mEvent Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "events" INNER JOIN "attend_events" ON "events"."id" = "attend_events"."event_id" WHERE "attend_events"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:19
+  [1m[36mUser Exists (1.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "invitations" ON "users"."id" = "invitations"."user_id" WHERE "invitations"."invited_id" = $1 AND "users"."accept" = $2 LIMIT $3[0m  [["invited_id", 1], ["accept", false], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:28
+  Rendered users/show.html.erb within layouts/application (68.5ms)
+Completed 500 Internal Server Error in 106ms (ActiveRecord: 14.7ms)
+
+
+  
+ActionView::Template::Error (PG::UndefinedColumn: ERROR:  column invitations.user_id does not exist
+LINE 1: ...users" INNER JOIN "invitations" ON "users"."id" = "invitatio...
+                                                             ^
+: SELECT  1 AS one FROM "users" INNER JOIN "invitations" ON "users"."id" = "invitations"."user_id" WHERE "invitations"."invited_id" = $1 AND "users"."accept" = $2 LIMIT $3):
+    25: 
+    26: 
+    27: 
+    28: <% if !@user.inviters.where(accept: false).empty? %>
+    29:     <%= render "shared/show_invitations", invitations: 
+    30:               @user.inviters.where(accepted: false, rejected: false).order(created_at: :desc), title: "Received" %>
+    31: <hr />
+  
+app/views/users/show.html.erb:28:in `_app_views_users_show_html_erb__927215126120703917_69996223706020'
+Started GET "/" for 127.0.0.1 at 2020-03-10 16:39:39 +0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/onur/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by HomePageController#home as HTML
+  Rendering home_page/home.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered home_page/home.html.erb within layouts/application (65.3ms)
+Completed 200 OK in 402ms (Views: 383.7ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2020-03-10 16:39:41 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:91
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mEvent Exists (1.1ms)[0m  [1m[34mSELECT  1 AS one FROM "events" INNER JOIN "create_events" ON "events"."id" = "create_events"."event_id" WHERE "create_events"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:10
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "create_events" ON "events"."id" = "create_events"."event_id" WHERE "create_events"."user_id" = $1 ORDER BY "events"."created_at" DESC[0m  [["user_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:1
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "events" INNER JOIN "create_events" ON "events"."id" = "create_events"."event_id" WHERE "create_events"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:1
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "attend_events" ON "users"."id" = "attend_events"."user_id" WHERE "attend_events"."event_id" = $1[0m  [["event_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "attend_events" ON "users"."id" = "attend_events"."user_id" WHERE "attend_events"."event_id" = $1[0m  [["event_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:7
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" INNER JOIN "create_events" ON "users"."id" = "create_events"."user_id" WHERE "create_events"."event_id" = $1 LIMIT $2[0m  [["event_id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_show_events.html.erb:13
+  Rendered shared/_show_events.html.erb (33.6ms)
+  [1m[36mEvent Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "events" INNER JOIN "attend_events" ON "events"."id" = "attend_events"."event_id" WHERE "attend_events"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:19
+  Rendered users/show.html.erb within layouts/application (82.3ms)
+Completed 500 Internal Server Error in 91ms (ActiveRecord: 8.5ms)
+
+
+  
+ActionView::Template::Error (Could not find the source association(s) :inviter in model Invitation. Try 'has_many :inviters, :through => :received_invitations, :source => <name>'. Is it one of event or user?):
+    25: 
+    26: 
+    27: 
+    28: <% if !@user.inviters.where(accept: false).empty? %>
+    29:     <%= render "shared/show_invitations", invitations: 
+    30:               @user.inviters.where(accepted: false, rejected: false).order(created_at: :desc), title: "Received" %>
+    31: <hr />
+  
+app/views/users/show.html.erb:28:in `_app_views_users_show_html_erb___3760714163506371484_47193307434580'
+Started GET "/" for 127.0.0.1 at 2020-03-10 16:41:57 +0300
+Processing by HomePageController#home as HTML
+  Rendering home_page/home.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered home_page/home.html.erb within layouts/application (31.4ms)
+Completed 200 OK in 74ms (Views: 65.6ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-10 16:41:59 +0300
+Processing by HomePageController#home as HTML
+  Rendering home_page/home.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered home_page/home.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 37ms (Views: 34.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2020-03-10 16:42:00 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:91
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mEvent Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "events" INNER JOIN "create_events" ON "events"."id" = "create_events"."event_id" WHERE "create_events"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:10
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "create_events" ON "events"."id" = "create_events"."event_id" WHERE "create_events"."user_id" = $1 ORDER BY "events"."created_at" DESC[0m  [["user_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:1
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "events" INNER JOIN "create_events" ON "events"."id" = "create_events"."event_id" WHERE "create_events"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:1
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "attend_events" ON "users"."id" = "attend_events"."user_id" WHERE "attend_events"."event_id" = $1[0m  [["event_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "attend_events" ON "users"."id" = "attend_events"."user_id" WHERE "attend_events"."event_id" = $1[0m  [["event_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:7
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" INNER JOIN "create_events" ON "users"."id" = "create_events"."user_id" WHERE "create_events"."event_id" = $1 LIMIT $2[0m  [["event_id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_show_events.html.erb:13
+  Rendered shared/_show_events.html.erb (35.5ms)
+  [1m[36mEvent Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "events" INNER JOIN "attend_events" ON "events"."id" = "attend_events"."event_id" WHERE "attend_events"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:19
+  Rendered users/show.html.erb within layouts/application (76.1ms)
+Completed 500 Internal Server Error in 85ms (ActiveRecord: 11.3ms)
+
+
+  
+ActionView::Template::Error (Could not find the source association(s) :inviter in model Invitation. Try 'has_many :inviters, :through => :received_invitations, :source => <name>'. Is it one of user?):
+    25: 
+    26: 
+    27: 
+    28: <% if !@user.inviters.where(accept: false).empty? %>
+    29:     <%= render "shared/show_invitations", invitations: 
+    30:               @user.inviters.where(accepted: false, rejected: false).order(created_at: :desc), title: "Received" %>
+    31: <hr />
+  
+app/views/users/show.html.erb:28:in `_app_views_users_show_html_erb___3760714163506371484_70056792722000'
+Started PUT "/__web_console/repl_sessions/2d1354a3a9d1690fc3ec55fe11f2db8b" for 127.0.0.1 at 2020-03-10 16:44:19 +0300
+Started PUT "/__web_console/repl_sessions/2d1354a3a9d1690fc3ec55fe11f2db8b" for 127.0.0.1 at 2020-03-10 16:44:24 +0300
+Started PUT "/__web_console/repl_sessions/2d1354a3a9d1690fc3ec55fe11f2db8b" for 127.0.0.1 at 2020-03-10 16:44:37 +0300
+Started PUT "/__web_console/repl_sessions/2d1354a3a9d1690fc3ec55fe11f2db8b" for 127.0.0.1 at 2020-03-10 16:44:41 +0300
+Started GET "/" for 127.0.0.1 at 2020-03-10 16:47:54 +0300
+Processing by HomePageController#home as HTML
+  Rendering home_page/home.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered home_page/home.html.erb within layouts/application (47.6ms)
+Completed 200 OK in 77ms (Views: 54.7ms | ActiveRecord: 20.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-10 16:47:56 +0300
+Processing by HomePageController#home as HTML
+  Rendering home_page/home.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered home_page/home.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 36ms (Views: 33.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2020-03-10 16:47:58 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:91
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mEvent Exists (1.3ms)[0m  [1m[34mSELECT  1 AS one FROM "events" INNER JOIN "create_events" ON "events"."id" = "create_events"."event_id" WHERE "create_events"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:10
+  [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "create_events" ON "events"."id" = "create_events"."event_id" WHERE "create_events"."user_id" = $1 ORDER BY "events"."created_at" DESC[0m  [["user_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:1
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "events" INNER JOIN "create_events" ON "events"."id" = "create_events"."event_id" WHERE "create_events"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:1
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "attend_events" ON "users"."id" = "attend_events"."user_id" WHERE "attend_events"."event_id" = $1[0m  [["event_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "attend_events" ON "users"."id" = "attend_events"."user_id" WHERE "attend_events"."event_id" = $1[0m  [["event_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:7
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" INNER JOIN "create_events" ON "users"."id" = "create_events"."user_id" WHERE "create_events"."event_id" = $1 LIMIT $2[0m  [["event_id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_show_events.html.erb:13
+  Rendered shared/_show_events.html.erb (34.2ms)
+  [1m[36mEvent Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "events" INNER JOIN "attend_events" ON "events"."id" = "attend_events"."event_id" WHERE "attend_events"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:19
+  [1m[36mUser Exists (1.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "invitations" ON "users"."id" = "invitations"."inviter_id" WHERE "invitations"."invited_id" = $1 AND "users"."accept" = $2 LIMIT $3[0m  [["invited_id", 1], ["accept", false], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:28
+  Rendered users/show.html.erb within layouts/application (84.4ms)
+Completed 500 Internal Server Error in 92ms (ActiveRecord: 20.6ms)
+
+
+  
+ActionView::Template::Error (PG::UndefinedColumn: ERROR:  column users.accept does not exist
+LINE 1: ...ter_id" WHERE "invitations"."invited_id" = $1 AND "users"."a...
+                                                             ^
+: SELECT  1 AS one FROM "users" INNER JOIN "invitations" ON "users"."id" = "invitations"."inviter_id" WHERE "invitations"."invited_id" = $1 AND "users"."accept" = $2 LIMIT $3):
+    25: 
+    26: 
+    27: 
+    28: <% if !@user.inviters.where(accept: false).empty? %>
+    29:     <%= render "shared/show_invitations", invitations: 
+    30:               @user.inviters.where(accepted: false, rejected: false).order(created_at: :desc), title: "Received" %>
+    31: <hr />
+  
+app/views/users/show.html.erb:28:in `_app_views_users_show_html_erb___3760714163506371484_70056794367960'
+Started GET "/users/1" for 127.0.0.1 at 2020-03-10 16:56:22 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:91
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mEvent Exists (1.6ms)[0m  [1m[34mSELECT  1 AS one FROM "events" INNER JOIN "create_events" ON "events"."id" = "create_events"."event_id" WHERE "create_events"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:10
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "create_events" ON "events"."id" = "create_events"."event_id" WHERE "create_events"."user_id" = $1 ORDER BY "events"."created_at" DESC[0m  [["user_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:1
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "events" INNER JOIN "create_events" ON "events"."id" = "create_events"."event_id" WHERE "create_events"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:1
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "attend_events" ON "users"."id" = "attend_events"."user_id" WHERE "attend_events"."event_id" = $1[0m  [["event_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "attend_events" ON "users"."id" = "attend_events"."user_id" WHERE "attend_events"."event_id" = $1[0m  [["event_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:7
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" INNER JOIN "create_events" ON "users"."id" = "create_events"."user_id" WHERE "create_events"."event_id" = $1 LIMIT $2[0m  [["event_id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_show_events.html.erb:13
+  Rendered shared/_show_events.html.erb (10.2ms)
+  [1m[36mEvent Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "events" INNER JOIN "attend_events" ON "events"."id" = "attend_events"."event_id" WHERE "attend_events"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:19
+  [1m[36mInvitation Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM "invitations" WHERE "invitations"."invited_id" = $1 AND "invitations"."accept" = $2 AND "invitations"."reject" = $3 LIMIT $4[0m  [["invited_id", 1], ["accept", false], ["reject", false], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:28
+  Rendered users/show.html.erb within layouts/application (35.1ms)
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 10.8ms)
+
+
+  
+ActionView::Template::Error (PG::UndefinedColumn: ERROR:  column invitations.accept does not exist
+LINE 1: ...ations" WHERE "invitations"."invited_id" = $1 AND "invitatio...
+                                                             ^
+HINT:  Perhaps you meant to reference the column "invitations.accepted".
+: SELECT  1 AS one FROM "invitations" WHERE "invitations"."invited_id" = $1 AND "invitations"."accept" = $2 AND "invitations"."reject" = $3 LIMIT $4):
+    25: 
+    26: 
+    27: 
+    28: <% if !Invitation.where(invited_id: @user.id, accept: false, reject: false).empty? %>
+    29:     <%= render "shared/show_invitations", invitations: 
+    30:               @user.inviters.where(accepted: false, rejected: false).order(created_at: :desc), title: "Received" %>
+    31: <hr />
+  
+app/views/users/show.html.erb:28:in `_app_views_users_show_html_erb___3760714163506371484_70056792794740'
+Started GET "/users/1" for 127.0.0.1 at 2020-03-10 16:56:53 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:91
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mEvent Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "events" INNER JOIN "create_events" ON "events"."id" = "create_events"."event_id" WHERE "create_events"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:10
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "create_events" ON "events"."id" = "create_events"."event_id" WHERE "create_events"."user_id" = $1 ORDER BY "events"."created_at" DESC[0m  [["user_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:1
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "events" INNER JOIN "create_events" ON "events"."id" = "create_events"."event_id" WHERE "create_events"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:1
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "attend_events" ON "users"."id" = "attend_events"."user_id" WHERE "attend_events"."event_id" = $1[0m  [["event_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "attend_events" ON "users"."id" = "attend_events"."user_id" WHERE "attend_events"."event_id" = $1[0m  [["event_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:7
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" INNER JOIN "create_events" ON "users"."id" = "create_events"."user_id" WHERE "create_events"."event_id" = $1 LIMIT $2[0m  [["event_id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_show_events.html.erb:13
+  Rendered shared/_show_events.html.erb (10.8ms)
+  [1m[36mEvent Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "events" INNER JOIN "attend_events" ON "events"."id" = "attend_events"."event_id" WHERE "attend_events"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:19
+  [1m[36mInvitation Exists (25.7ms)[0m  [1m[34mSELECT  1 AS one FROM "invitations" WHERE "invitations"."invited_id" = $1 AND "invitations"."accepted" = $2 AND "invitations"."rejected" = $3 LIMIT $4[0m  [["invited_id", 1], ["accepted", false], ["rejected", false], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:28
+  [1m[36mInvitation Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM "invitations" WHERE "invitations"."invited_id" = $1 AND "invitations"."accept" = $2 LIMIT $3[0m  [["invited_id", 1], ["accept", true], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:36
+  Rendered users/show.html.erb within layouts/application (58.6ms)
+Completed 500 Internal Server Error in 67ms (ActiveRecord: 30.3ms)
+
+
+  
+ActionView::Template::Error (PG::UndefinedColumn: ERROR:  column invitations.accept does not exist
+LINE 1: ...ations" WHERE "invitations"."invited_id" = $1 AND "invitatio...
+                                                             ^
+HINT:  Perhaps you meant to reference the column "invitations.accepted".
+: SELECT  1 AS one FROM "invitations" WHERE "invitations"."invited_id" = $1 AND "invitations"."accept" = $2 LIMIT $3):
+    33: <% end %>
+    34: 
+    35: 
+    36: <% if !Invitation.where(invited_id: @user.id, accept: true).empty? %>
+    37:     <%= render "shared/show_invitations", invitations: 
+    38:                               @user.inviters.where(accepted: true).order(created_at: :desc), title: "Accepted" %>
+    39: <hr />
+  
+app/views/users/show.html.erb:36:in `_app_views_users_show_html_erb___3760714163506371484_70056870520720'
+Started GET "/users/1" for 127.0.0.1 at 2020-03-10 16:57:48 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:91
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mEvent Exists (3.1ms)[0m  [1m[34mSELECT  1 AS one FROM "events" INNER JOIN "create_events" ON "events"."id" = "create_events"."event_id" WHERE "create_events"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:10
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "create_events" ON "events"."id" = "create_events"."event_id" WHERE "create_events"."user_id" = $1 ORDER BY "events"."created_at" DESC[0m  [["user_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:1
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "events" INNER JOIN "create_events" ON "events"."id" = "create_events"."event_id" WHERE "create_events"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:1
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "attend_events" ON "users"."id" = "attend_events"."user_id" WHERE "attend_events"."event_id" = $1[0m  [["event_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "attend_events" ON "users"."id" = "attend_events"."user_id" WHERE "attend_events"."event_id" = $1[0m  [["event_id", 1]]
+  ↳ app/views/shared/_show_events.html.erb:7
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" INNER JOIN "create_events" ON "users"."id" = "create_events"."user_id" WHERE "create_events"."event_id" = $1 LIMIT $2[0m  [["event_id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_show_events.html.erb:13
+  Rendered shared/_show_events.html.erb (12.2ms)
+  [1m[36mEvent Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "events" INNER JOIN "attend_events" ON "events"."id" = "attend_events"."event_id" WHERE "attend_events"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:19
+  [1m[36mInvitation Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "invitations" WHERE "invitations"."invited_id" = $1 AND "invitations"."accepted" = $2 AND "invitations"."rejected" = $3 LIMIT $4[0m  [["invited_id", 1], ["accepted", false], ["rejected", false], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:28
+  [1m[36mInvitation Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "invitations" WHERE "invitations"."invited_id" = $1 AND "invitations"."accepted" = $2 LIMIT $3[0m  [["invited_id", 1], ["accepted", true], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:36
+  [1m[36mUser Exists (1.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "invitations" ON "users"."id" = "invitations"."inviter_id" WHERE "invitations"."invited_id" = $1 AND "users"."reject" = $2 LIMIT $3[0m  [["invited_id", 1], ["reject", true], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:44
+  Rendered users/show.html.erb within layouts/application (43.6ms)
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 8.7ms)
+
+
+  
+ActionView::Template::Error (PG::UndefinedColumn: ERROR:  column users.reject does not exist
+LINE 1: ...ter_id" WHERE "invitations"."invited_id" = $1 AND "users"."r...
+                                                             ^
+: SELECT  1 AS one FROM "users" INNER JOIN "invitations" ON "users"."id" = "invitations"."inviter_id" WHERE "invitations"."invited_id" = $1 AND "users"."reject" = $2 LIMIT $3):
+    41: <% end %>
+    42: 
+    43: 
+    44: <% if !@user.inviters.where(reject: true).empty? %>
+    45:     <%= render "shared/show_invitations", invitations: 
+    46:                               @user.inviters.where(rejected: true).order(created_at: :desc), title: "Rejected" %>
+    47: <hr />
+  
+app/views/users/show.html.erb:44:in `_app_views_users_show_html_erb___3760714163506371484_70056861753580'

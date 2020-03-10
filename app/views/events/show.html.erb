@@ -1,11 +1,13 @@
 <h1><%= @event.name %></h1>
 
-<h3><%= @event.type %> | <%= @event.attendees.count %> <%= pluralize(@event.attendees,"attendee") %></h3>
+<h3><%= @event.event_type %> | <%= @event.attendees.count %> <%= pluralize(@event.attendees,"attendee") %></h3>
 <p><%= @event.description %></p>
 
 <p><b><u>Start at: <%= @event.event_start_at %> - End at: <%= @event.event_end_at %></u></b></p>
 
 <p><i><%= model_date(@event) %></i></p>
+
+<% if !@event.attendees.nil? %>
 
 <% if !@event.attendees.include?(current_user) %>
     <%= form_for(:attend, :url => { :action => :attend_event }) do |f| %>
@@ -28,7 +30,9 @@
 <ol>
     <% @event.attendees.each do |attendee| %>
         <li>
-            <%= link_to "#{attendee.name}", users_path(attendee) %>
+            <%= link_to "#{attendee.name}", user_path(attendee) %>
         </li>
     <% end %>
 </ol>
+
+<% end %>

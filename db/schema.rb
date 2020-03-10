@@ -10,10 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_06_130346) do
+ActiveRecord::Schema.define(version: 2020_03_09_134532) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "attend_events", force: :cascade do |t|
+    t.bigint "user_id"
+    t.bigint "event_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["event_id"], name: "index_attend_events_on_event_id"
+    t.index ["user_id"], name: "index_attend_events_on_user_id"
+  end
 
   create_table "attendances", force: :cascade do |t|
     t.bigint "user_id"
@@ -23,6 +32,15 @@ ActiveRecord::Schema.define(version: 2020_03_06_130346) do
     t.index ["event_id"], name: "index_attendances_on_event_id"
     t.index ["user_id", "event_id"], name: "index_attendances_on_user_id_and_event_id", unique: true
     t.index ["user_id"], name: "index_attendances_on_user_id"
+  end
+
+  create_table "create_events", force: :cascade do |t|
+    t.bigint "user_id"
+    t.bigint "event_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["event_id"], name: "index_create_events_on_event_id"
+    t.index ["user_id"], name: "index_create_events_on_user_id"
   end
 
   create_table "events", force: :cascade do |t|
@@ -62,7 +80,11 @@ ActiveRecord::Schema.define(version: 2020_03_06_130346) do
     t.index ["name"], name: "index_users_on_name", unique: true
   end
 
+  add_foreign_key "attend_events", "events"
+  add_foreign_key "attend_events", "users"
   add_foreign_key "attendances", "events"
   add_foreign_key "attendances", "users"
+  add_foreign_key "create_events", "events"
+  add_foreign_key "create_events", "users"
   add_foreign_key "invitations", "events"
 end
