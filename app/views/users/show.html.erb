@@ -27,7 +27,7 @@
 
 <% if !Invitation.where(invited_id: @user.id, accepted: false, rejected: false).empty? %>
     <%= render "shared/show_invitations", invitations: 
-              @user.inviters.where(accepted: false, rejected: false).order(created_at: :desc), title: "Received" %>
+    Invitation.where(invited_id: @user.id, accepted: false, rejected: false).order(created_at: :desc), title: "Received" %>
 <hr />
 
 <% end %>
@@ -35,22 +35,22 @@
 
 <% if !Invitation.where(invited_id: @user.id, accepted: true).empty? %>
     <%= render "shared/show_invitations", invitations: 
-                              @user.inviters.where(accepted: true).order(created_at: :desc), title: "Accepted" %>
+    Invitation.where(invited_id: @user.id, accepted: true).order(created_at: :desc), title: "Accepted" %>
 <hr />
 
 <% end %>
 
 
-<% if !@user.inviters.where(reject: true).empty? %>
+<% if !Invitation.where(invited_id: @user.id, rejected: true).empty? %>
     <%= render "shared/show_invitations", invitations: 
-                              @user.inviters.where(rejected: true).order(created_at: :desc), title: "Rejected" %>
+    Invitation.where(invited_id: @user.id, rejected: true).order(created_at: :desc), title: "Rejected" %>
 <hr />
 
 <% end %>
 
 
-<% if !@user.invitings.empty? %>
+<% if !Invitation.where(inviter_id: @user.id).empty? %>
     <%= render "shared/show_invitations", invitations: 
-                                                   @user.invitings.order(created_at: :desc), title: "Sended" %>
+    Invitation.where(inviter_id: @user.id).order(created_at: :desc), title: "Sended" %>
 <% end %>
 
