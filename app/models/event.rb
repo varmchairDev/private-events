@@ -27,7 +27,7 @@ class Event < ApplicationRecord
     validates :event_end_at  , presence: true
 
     def date_check
-        if event_start_at < Date.new
+        if event_end_at < Time.new
             errors.add(:event, "Event ended.")
         elsif event_start_at >= event_end_at
             errors.add(:event, "Invalid end date.")

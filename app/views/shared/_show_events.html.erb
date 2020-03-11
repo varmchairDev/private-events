@@ -3,7 +3,7 @@
     <ol>
         <% events.each do |event| %>
             <li>
-                <h3><%= link_to "#{event}", event_path(event) %></h3>  
+                <h3><%= link_to "#{event.name}", event_path(event) %></h3>  
                 <h4><%= event.event_type %> | (<%= event.attendees.count %> <%= pluralize(event.attendees.count, "attendee") %>)</h4>
 
                 <p><%= event.description %></p>

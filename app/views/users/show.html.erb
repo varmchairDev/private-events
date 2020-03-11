@@ -5,7 +5,7 @@
 
 <p><i><%= model_date(@user) %></i></p>
 
-
+<%= link_to 'Create New Event', new_event_path %>
 
 <% if !@user.created_events.empty? %>
     <%= render "shared/show_events", events: @user.created_events.order(created_at: :desc), title: "Created" %>

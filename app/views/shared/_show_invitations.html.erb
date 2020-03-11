@@ -25,15 +25,15 @@
                            Accepted: (<%= user.inviters.where(accepted: true).count %>) - 
                            Rejected: (<%= user.inviters.where(rejected: true).count %>)</p>
             <% if title == "Received" && current_user == User.find(params[:id]) %>
-                <%= form_for(:accept_form, :url => { :action => :accept_invitation }) do |f| %>
+                <%= form_for(:accept_form, :action => :accept_invitation ) do |f| %>
                     <%= f.hidden_field :event_id, value: invitation.event_id %>
                     <%= f.hidden_field :inviter_id, value: invitation.inviter_id %>
-                    <%= f.submit, value: "Accept" %>
+                    <%= f.submit :Accept %>
                 <% end %>
-                <%= form_for(:reject_form, :url => { :action => :reject_invitation }) do |f| %>
+                <%= form_for(:reject_form, :action => :reject_invitation ) do |f| %>
                     <%= f.hidden_field :event_id, value: invitation.event_id %>
                     <%= f.hidden_field :inviter_id, value: invitation.inviter_id %>
-                    <%= f.submit, value: "Reject" %>
+                    <%= f.submit :Reject %>
                 <% end %>
             <% end %>
             <% action_name_i = title == "Sended" ? "sended as" : "received by" %>

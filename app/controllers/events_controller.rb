@@ -6,7 +6,7 @@ class EventsController < ApplicationController
   before_action :auth_check, only: [:edit, :update, :destroy] #aplication_helper.rb
 
   def index
-    @events = Event.order(:event_start_at :desc)
+    @events = Event.order(event_start_at: :desc)
   end
 
   def show
@@ -53,13 +53,10 @@ class EventsController < ApplicationController
   def attend_event
     redirect_back(fallback_location: root_path) unless !@event.attendees.include?(current_user)
     @event.attendees << current_user
-    redirect_back(fallback_location: root_path)
   end
 
   def cancel_event
-    redirect_back(fallback_location: root_path) unless @event.attendees.include?(current_user)
     @event.attendees.delete(current_user)
-    redirect_back(fallback_location: root_path) 
   end
 
   def send_invitation
