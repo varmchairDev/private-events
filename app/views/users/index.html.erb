@@ -2,7 +2,7 @@
 
 <% @users.each do |user| %>
     <%= link_to 
-    "Name: #{user.name} - Created Events: (#{user.created_events}) - Attendent Events: (#{user.attended_events})", 
-    users_path(user) %>
+    "Name: #{user.name} - Created Events: (#{user.created_events}) - Attended Events: (#{user.attended_events})", 
+user_path(user) %>
     <hr />
 <% end %>

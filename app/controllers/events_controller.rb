@@ -1,7 +1,7 @@
 class EventsController < ApplicationController
 
   before_action :set_event, only: [:show, :edit, :update, :destroy, 
-                                   :attend_event, :cancel_event, :send_invitation]
+                                   :handle_forms]
   before_action :only_users
   before_action :auth_check, only: [:edit, :update, :destroy] #aplication_helper.rb
 
@@ -13,12 +13,13 @@ class EventsController < ApplicationController
   end
 
   def new
-    @event = current_user.created_events.build
+    @event = Event.new
   end
 
   def create
-    @event = current_user.created_events.build(event_params)
+    @event = Event.new(event_params)
     if @event.save
+      current_user.created_events << @event
       flash[:success] = "Event created."
       redirect_to @event 
     else
@@ -50,27 +51,25 @@ class EventsController < ApplicationController
     end
   end
 
-  def attend_event
-    redirect_back(fallback_location: root_path) unless !@event.attendees.include?(current_user)
-    @event.attendees << current_user
-  end
-
-  def cancel_event
-    @event.attendees.delete(current_user)
-  end
-
-  def send_invitation
-    redirect_back(fallback_location: root_path) if current_user.name == params[:invite][:user_name]
-    invited = User.find_by(name: params[:invite][:user_name])
-    redirect_back(fallback_location: root_path) unless 
+  def handle_forms
+    if !params[:attend].nil?
+      redirect_back(fallback_location: root_path) unless !@event.attendees.include?(current_user)
+      @event.attendees << current_user
+    elsif !params[:cancel].nil?
+      @event.attendees.delete(current_user)
+    elsif !params[:invite].nil?
+      redirect_back(fallback_location: root_path) if current_user.name == params[:invite][:user_name]
+      invited = User.find_by(name: params[:invite][:user_name])
+      redirect_back(fallback_location: root_path) unless 
                          Invitation.find_by(inviter_id: current_user.id, 
                                             invited_id: invited.id, event_id: @event.id).nil?
-    new_invitation = Invitation.new(inviter_id: current_user.id, invited_id: invited.id, 
+      new_invitation = Invitation.new(inviter_id: current_user.id, invited_id: invited.id, 
                                                                     event_id: @event.id)
-    if new_invitation.save
-      flash[:success] = "Invitations sended."
-    else 
-      flash[:error] = "Failed to send invitation."
+      if new_invitation.save
+        flash[:success] = "Invitations sended."
+      else 
+        flash[:error] = "Failed to send invitation."
+      end
     end
     redirect_back(fallback_location: root_path)
   end

@@ -1,10 +1,10 @@
-<h2><%= title %> <%= pluralize(events, "Event") %> (<%= events.count %>)</h2>
+<h2><%= title %> <%= pluralize(events.count, "Event") %></h2>
     
     <ol>
         <% events.each do |event| %>
             <li>
                 <h3><%= link_to "#{event.name}", event_path(event) %></h3>  
-                <h4><%= event.event_type %> | (<%= event.attendees.count %> <%= pluralize(event.attendees.count, "attendee") %>)</h4>
+                <h4><%= event.event_type %> | <%= pluralize(event.attendees.count, "attendee") %></h4>
 
                 <p><%= event.description %></p>
 

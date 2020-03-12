@@ -1,4 +1,4 @@
-<h1><%= title %> <%= pluralize(invitations, "Invitation") %> (<%= invitations.count %>)</h1>
+<h1><%= title %> <%= pluralize(invitations.count, "Invitation") %></h1>
 
 <ol>
     <% invitations.each do |invitation| %>
@@ -17,20 +17,22 @@
         <span style=<%= color %>><li>
             <p>User name: <%= user.name %> - Email: <%= user.email %> | <%= Event.find(invitation.event_id).name %></p>
             <p>Created events: <b>(<%= user.created_events.count %>)</b> - 
-             Attendent events: <b>(<%= user.attendent_events.count %>)</b></p>
+             Attended events: <b>(<%= user.attended_events.count %>)</b></p>
             <p>Sended invitations: <b>(<%= user.invitings.count %>)</b> | 
-                         Accepted: (<%= user.invitings.where(accepted: true).count %>) - 
-                         Rejected: (<%= user.invitings.where(rejected: true).count %>)</p>
+                         Accepted: (<%= Invitation.where(inviter_id: user.id, accepted: true).count %>) - 
+                         Rejected: (<%= Invitation.where(inviter_id: user.id, rejected: true).count %>)</p>
             <p>Received invitations: <b>(<%= user.inviters.count %>)</b> | 
-                           Accepted: (<%= user.inviters.where(accepted: true).count %>) - 
-                           Rejected: (<%= user.inviters.where(rejected: true).count %>)</p>
+                           Accepted: (<%= Invitation.where(invited_id: user.id, accepted: true).count %>) - 
+                           Rejected: (<%= Invitation.where(invited_id: user.id, rejected: true).count %>)</p>
             <% if title == "Received" && current_user == User.find(params[:id]) %>
-                <%= form_for(:accept_form, :action => :accept_invitation ) do |f| %>
+                <%= form_for(:accept_form, :action => :handle_forms ) do |f| %>
+                    <%= f.hidden_field :form_name, value: "accept_invitation" %>
                     <%= f.hidden_field :event_id, value: invitation.event_id %>
                     <%= f.hidden_field :inviter_id, value: invitation.inviter_id %>
                     <%= f.submit :Accept %>
                 <% end %>
-                <%= form_for(:reject_form, :action => :reject_invitation ) do |f| %>
+                <%= form_for(:reject_form, :action => :handle_forms ) do |f| %>
+                    <%= f.hidden_field :form_name, value: "reject_invitation" %>
                     <%= f.hidden_field :event_id, value: invitation.event_id %>
                     <%= f.hidden_field :inviter_id, value: invitation.inviter_id %>
                     <%= f.submit :Reject %>

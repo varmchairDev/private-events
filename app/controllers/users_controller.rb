@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
 
   before_action :set_user, only: [:show, :edit, :update, :destroy, 
-                                  :accept_invitation, :reject_invitation]
+                                  :handle_forms]
   before_action :auth_check, except: [:index, :show, :new, :create]
 
   def index
@@ -50,35 +50,32 @@ class UsersController < ApplicationController
     end
   end 
 
-  def accept_invitation
-    inv = Invitation.find_by(inviter_id: params[:accept_form][:inviter_id], 
-                             invited_id: current_user.id,
-                               event_id: params[:accept_form][:event_id])
-    redirect_back(fallback_location: root_path) if inv.accepted? || inv.rejected?
-    inv.update_attribute(:accepted, true)
-    if inv.save
-      Event.find(inv.event_id).attendees << current_user 
-      flash[:success] = "Invitation accpeted."
-      redirect_back(fallback_location: root_path)
-    else
-      flash[:error] = "Failed to accept invitation."
-      redirect_back(fallback_location: root_path)
+  def handle_forms
+    if !params[:accept_form].nil?
+      inv = Invitation.find_by(inviter_id: params[:accept_form][:inviter_id], 
+        invited_id: current_user.id,
+          event_id: params[:accept_form][:event_id])
+      redirect_back(fallback_location: root_path) if inv.accepted? || inv.rejected?
+      inv.update_attribute(:accepted, true)
+      if inv.save
+        Event.find(inv.event_id).attendees << current_user 
+        flash[:success] = "Invitation accpeted."
+      else
+        flash[:error] = "Failed to accept invitation."
+      end
+    elsif !params[:reject_form].nil?
+      inv = Invitation.find_by(inviter_id: params[:reject_form][:inviter_id], 
+        invited_id: current_user.id,
+          event_id: params[:reject_form][:event_id])
+      redirect_back(fallback_location: root_path) if inv.accepted? || inv.rejected?
+      inv.update_attribute(:rejected, true)
+      if inv.save
+        flash[:notice] = "Invitation rejected."
+      else
+        flash[:error] = "Failed to reject invitation."
+      end
     end
-  end
-
-  def reject_invitation
-    inv = Invitation.find_by(inviter_id: params[:accept_form][:inviter_id], 
-      invited_id: current_user.id,
-        event_id: params[:accept_form][:event_id])
-    redirect_back(fallback_location: root_path) if inv.accepted? || inv.rejected?
-    inv.update_attribute(:rejected, true)
-    if inv.save
-      flash[:notice] = "Invitation rejected."
-      redirect_back(fallback_location: root_path)
-    else
-      flash[:error] = "Failed to reject invitation."
-      redirect_back(fallback_location: root_path)
-    end
+    redirect_back(fallback_location: root_path)
   end
 
   private

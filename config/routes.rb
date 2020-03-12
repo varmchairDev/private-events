@@ -4,14 +4,17 @@ Rails.application.routes.draw do
 
   get "/login", to: "sessions#new"
   post "/login", to: "sessions#create"
-  get "/logout", to: "sessions#destroy"
+  delete "/logout", to: "sessions#destroy"
   get 'events/index'
   get 'events/show'
   get 'events/new'
   get 'events/edit'
-  post 'events/:id', to: "events#attend_event"
-  post 'events/:id', to: "events#cancel_event"
-  post 'events/:id', to: "events#send_invitation"
+  post 'events/:id', to: "events#handle_forms"
+  put  'events/:id', to: "events#update"
+  delete 'events/:id', to: "events#destroy"
+  post 'users/:id', to: "users#handle_forms"
+  put  'users/:id', to: "events#update"
+  delete 'users/:id', to: "events#destroy"
   get 'users/index'
   get 'users/show'
   get '/signup', to: "users#new"
